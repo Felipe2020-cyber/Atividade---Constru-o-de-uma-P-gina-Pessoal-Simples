@@ -3,111 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Início | Felipe Ribeiro Sousa</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
     <header>
-        <h1>Bem-vindo</h1>
-        <p>Estudante de tecnologia e professor de inglês em formação.</p>
+        <h1>Welcome</h1>
+        <p>Então, meu nome e Felipe Ribeiro Sousa, sou do estado do pará, estou criando esta pagina para quem sabe futuramente transforma-la em um curriculum ou portifolio de projetos que eu irei desenvolver durante esse curso.</p>
     </header>
 
-   
-    <nav>
+    <nav aria-label="Navegação principal">
         <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html" aria-current="page">Início</a></li>
             <li><a href="sobre.html">Sobre Mim</a></li>
-            <li><a href="https://github.com" target="_blank">Meu GitHub</a></li>
+            <li><a href="https://github.com/Felipe2020-cyber" target="_blank" rel="noopener noreferrer">Meu GitHub</a></li>
         </ul>
     </nav>
 
     <main>
-    
-        <section>
+        <section class="card">
             <h2>Sobre a Página</h2>
-            <p>Este site foi desenvolvido como parte de uma atividade acadêmica da disciplina programação web.</p>
-            
-      
-            <img src="img/foto.JPEG" alt="Perfil" width="300">
+            <p>Este site foi desenvolvido como parte de uma atividade acadêmica da disciplina de Programação Web.</p>
+            <img class="foto-perfil" src="img/foto.jpeg" alt="Foto de perfil de Felipe Ribeiro Sousa" width="300" height="300">
         </section>
 
-
-        <section>
+        <section class="card">
             <h2>Meus Interesses</h2>
-            <ul>
-                <li>Desenvolvimento de aplicações e páginas web</li>
-                <li>Pesquisa em linguistica aplicada critica</li>
+            <ul class="interesses">
+                <li>Desenvolvimento de aplicações e páginas web para o ensino de línguas</li>
+                <li>Pesquisa em linguística aplicada crítica</li>
                 <li>Prática de atividades físicas ao ar livre</li>
             </ul>
         </section>
+
+        <section class="card">
+            <h2>Minha trajetória na programação</h2>
+            <p>Eu já fiz o curso de programação web uma vez em 2020, infelizmente foram apenas 300 horas, conseguir aprender o basíco para construir front-ends, após isso entrei para a faculdade e agora retorno em um curso tecníco, espero fazer algo antes do El ninõ acabar com tudo.</p>
+        </section>
+
+                <section class="card">
+            <h2>Objetivo</h2>
+            <p>Indo direto ao ponto, quero desenvolver algum projeto para ensinar inglês</p>
+        </section>
+
+        <section class="card technology-section">
+            <h2>Tecnologias e Interesses</h2>
+            <div class="technology-grid">
+                <article class="technology-card">
+                    <h3>HTML e CSS</h3>
+                    <p>Estruturo páginas acessíveis e exploro estilos para criar experiências web organizadas e responsivas. Quero aperfeiçoar meu CSS para criar animações.</p>
+                    <ul class="tags" aria-label="Tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Web</li>
+                    </ul>
+                </article>
+
+                <article class="technology-card">
+                    <h3>Programação Web</h3>
+                    <p>Tenho interesse em desenvolver aplicações e aprofundar meus conhecimentos em tecnologias para a web, pretendo lá mais para frente expandir para java.</p>
+                    <ul class="tags" aria-label="Tags">
+                        <li>Desenvolvimento</li>
+                        <li>Aplicações</li>
+                        <li>Ensino e Aprendizado</li>
+                    </ul>
+                </article>
+
+                <article class="technology-card">
+                    <h3>Linguística Aplicada</h3>
+                    <p>Investigo temas de linguística aplicada crítica e desenvolvo meu trabalho de conclusão de curso.</p>
+                    <ul class="tags" aria-label="Tags">
+                        <li>Pesquisa</li>
+                        <li>Linguagem</li>
+                        <li>Educação</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
     </main>
+    <section id="contato" class="card" aria-labelledby="contato-titulo">
+        <h2 id="contato-titulo">Entre em contato</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulário de contato</legend>
 
-    <section id="contato">
-    <h2>Entre em contato</h2>
+                <div class="form-field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Formulário de contato</legend>
+                <div class="form-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
 
-            <div>
-                <label for="nome">Nome:</label>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    placeholder="Digite seu nome"
-                    required
-                >
-            </div>
+                <div class="form-field form-field--wide">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+                </div>
 
-            <div>
-                <label for="email">E-mail:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Digite seu e-mail"
-                    required
-                >
-            </div>
+                <div class="form-field form-field--wide">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
 
-            <div>
-                <label for="assunto">Assunto:</label>
-                <input
-                    type="text"
-                    id="assunto"
-                    name="assunto"
-                    placeholder="Digite o assunto"
-                    required
-                >
-            </div>
-
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    rows="5"
-                    cols="40"
-                    placeholder="Escreva sua mensagem"
-                    required
-                ></textarea>
-            </div>
-
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-            </div>
-        </fieldset>
-    </form>
-</section>
-
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2026 - Desenvolvido por Felipe Ribeiro Sousa</p>
         <p>Contato acadêmico: <a href="mailto:felipe.sousa@braganca.ufpa.br">felipe.sousa@braganca.ufpa.br</a></p>
     </footer>
-
 </body>
 </html>
